@@ -68,8 +68,22 @@ Anu: 300.00
 
 ## Running tests
 
-To check that everything works correctly, run:
+This project has automated tests in the `test` folder (`test/test_main.py`). They check things like:
+
+- totals are calculated correctly
+- a clear error shows up if a column is missing
+- a clear error shows up if the amount or date is invalid
+- a clear error shows up if the file is empty or missing
+
+To run all the tests, go to the `order-summary` folder and run:
 
 ```powershell
 pytest
+```
+
+If everything works, you'll see something like:
+
+```
+........                                                                 [100%]
+8 passed in 0.06s
 ```
